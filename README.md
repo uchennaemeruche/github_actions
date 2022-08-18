@@ -38,3 +38,5 @@ Steps are individual tasks that run serially within a Job.
 Each step is either a schell script that will be executed, or an action that will run. Steps are executed in order and are dependent on each other. Since each each is executed on the same runner, you can share data from one step to another.
 A Step can contain one or multiple actions
 
+### Action
+An Action is a custom standalone command or application that performs a complex but frequently repeated task. Actions can be used to reduce the amount of repetitive codes in workflow files. An action can pull a git repo from Github, setup the correct toolchain for build environment, or set up the authentication to a cloud provider. Actions can be reused. 
