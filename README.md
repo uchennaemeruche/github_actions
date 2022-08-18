@@ -26,3 +26,9 @@ A reusable workflow can be used by another workflow if:
 ### Runner
 A runner is a Server to run the jobs when they’re trigerred. It listens to available jobs and runs only one job at a time. The runners will run the jobs, then report their progress, logs and result back to GitHub. This report can be viewed on the UI of the repository.
 A runner is defined using: “runs-on” keyword in a .yml file.
+
+### Jobs
+A Job is a list of steps that will be executed on the same runner. By default, all jobs in a Runner runs in parallel, except if there are some jobs that depend on each other. 
+Dependent Jobs run serially.
+In order to run the jobs, you must specify a runner for each of them. 
+Each job will run inside its own virtual machine runner, or inside a 
