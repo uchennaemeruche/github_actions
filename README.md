@@ -32,3 +32,9 @@ A Job is a list of steps that will be executed on the same runner. By default, a
 Dependent Jobs run serially.
 In order to run the jobs, you must specify a runner for each of them. 
 Each job will run inside its own virtual machine runner, or inside a 
+
+### Steps
+Steps are individual tasks that run serially within a Job.
+Each step is either a schell script that will be executed, or an action that will run. Steps are executed in order and are dependent on each other. Since each each is executed on the same runner, you can share data from one step to another.
+A Step can contain one or multiple actions
+
