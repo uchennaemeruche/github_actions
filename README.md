@@ -1,6 +1,6 @@
 # Github Actions
 
-Github Actions helps to automate the build, test and deployment pipeline of a software all within Github. With Github Actions, teams can define highly advanced pipelines.
+Github Actions helps to automate the build, test and deployment pipeline of a software all within Github. With Github Actions, teams can define highly advanced pipelines and run codes in response to an event.
 
 
 ## Workflows
